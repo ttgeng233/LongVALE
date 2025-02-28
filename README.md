@@ -31,7 +31,7 @@ to comprehensive omni-modality video perception. To address this gap,
 Event understanding benchmark comprising 105K omnimodal events with precise temporal boundaries and detailed relation-aware captions within 8.4K high-quality long videos. 
 - we build LongVALE-LLM to enable video large language models (LLMs) for omni-modality fine-grained temporal video understanding for the first time. 
 <div align="center">
-    <img src="fig1.png" width="700"/>
+    <img src="fig1.png" width="800"/>
     <br/>
     <figcaption></figcaption>
 </div>
