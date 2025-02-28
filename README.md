@@ -1,6 +1,6 @@
 <h2 align="center"> <a href="https://arxiv.org/abs/2411.19772">LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos</a></h2>
 
-<h3 align="center"> Tiantian Geng, Jinrui Zhang, Qingni Wang, Teng Wang, Jinming Duan, Feng Zheng </h3>
+<h4 align="center"> Tiantian Geng, Jinrui Zhang, Qingni Wang, Teng Wang, Jinming Duan, Feng Zheng </h3>
 
 <h5 align="center"> If our project helps you, please give us a star ⭐ and cite our <a href="#Citation">paper</a>!</h2>
 <!-- # LongVALE -->
@@ -22,16 +22,16 @@ TODO
 - [ ] Release raw videos of LongVALE.
   
 ## 👀 Overview
-Recent advancements in video understanding remain limited to coarse-grained and visual-only tasks. However, real-world videos encompass omnimodal information (vision, audio, and speech) with a series of events forming a cohesive storyline. The lack of
+<!-- Recent advancements in video understanding remain limited to coarse-grained and visual-only tasks. However, real-world videos encompass omnimodal information (vision, audio, and speech) with a series of events forming a cohesive storyline. The lack of
 multi-modal video data with fine-grained event annotations
 and the high cost of manual labeling are major obstacles
-to comprehensive omni-modality video perception. To address this gap, 
-- we propose an automatic pipeline consisting of high-quality multi-modal video filtering, semantically coherent omni-modal event boundary detection, and crossmodal correlation-aware event captioning. 
-- we present LongVALE, the first-ever Vision-Audio-Language
+to comprehensive omni-modality video perception. To address this gap,  -->
+- We propose an automatic pipeline consisting of high-quality multi-modal video filtering, semantically coherent omni-modal event boundary detection, and crossmodal correlation-aware event captioning. 
+- We present LongVALE, the first-ever Vision-Audio-Language
 Event understanding benchmark comprising 105K omnimodal events with precise temporal boundaries and detailed relation-aware captions within 8.4K high-quality long videos. 
-- we build LongVALE-LLM to enable video large language models (LLMs) for omni-modality fine-grained temporal video understanding for the first time. 
+- We build LongVALE-LLM to enable video large language models (LLMs) for omni-modality fine-grained temporal video understanding for the first time. 
 <div align="center">
-    <img src="fig1.png" width="800"/>
+    <img src="fig1.jpg" width="800"/>
     <br/>
     <figcaption></figcaption>
 </div>
@@ -47,7 +47,7 @@ Event understanding benchmark comprising 105K omnimodal events with precise temp
 **[Note]** The json files include the information of video id (YouTube id), video duration, timestamps and detailed captions of each omni-modal events. You can download the raw videos on YouTube using the provided video ids.
 
 ### LongVALE-based dialogue data for LongVALE-LLM training 
-| Tuning Stage          | Data Source | Download | # Videos | QA Dialogues | 
+| Tuning Stage          | Data Source | Download | # Videos | # QA Dialogues | 
 |-----------------|----------|-----------------|-----------|---|
 |Omni boundary perception |LongVALE | [🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/stage_2_train_7240.json) | 7240 | 7240 |
 |          |LongVALE + [VTimeLLLM_stage2](https://github.com/huangb23/VTimeLLM)  | [🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/stage_2_ours_add_vtimellm.json) | ~141K | ~154K
