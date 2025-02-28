@@ -7,7 +7,7 @@
 
 <!-- [![arxiv](https://img.shields.io/badge/Arxiv-2410.05643-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.19772) -->
 
-[[🌐 Project Page]()] [[📖 arXiv Paper](https://arxiv.org/abs/2411.19772)] [[📊 LongVALE Dataset]()]
+[[🌐 Project Page]()] [[📖 arXiv Paper](https://arxiv.org/abs/2411.19772)] [[📊 LongVALE Dataset](https://huggingface.co/datasets/ttgeng233/LongVALE)]
 
 ## News
 
@@ -31,9 +31,9 @@ to comprehensive omni-modality video perception. To address this gap,
 Event understanding benchmark comprising 105K omnimodal events with precise temporal boundaries and detailed relation-aware captions within 8.4K high-quality long videos. 
 - we build LongVALE-LLM to enable video large language models (LLMs) for omni-modality fine-grained temporal video understanding for the first time. 
 <div align="center">
-    <img src="fig1_new3.png" alt="Overview of TRACE" width="700"/>
+    <img src="fig1.png" width="700"/>
     <br/>
-    <figcaption>Overview of TRACE.</figcaption>
+    <figcaption></figcaption>
 </div>
 
 ## Dataset 
