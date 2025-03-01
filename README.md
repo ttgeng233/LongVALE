@@ -40,8 +40,8 @@ Event understanding benchmark comprising 105K omnimodal events with precise temp
 ### Annotation files of training and evaluation sets
 | Split           | Download | # Videos | # Omni-modal Events | Video Duration |
 |-----------------|----------|-----------------|-----------|----------------|
-|Training set | [🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/train_set_info_7240.json)| 7,240 | 91,863 | 473.8 hrs |
-|Evaluation set | [🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/test_set_info_1171.json)| 1,171 |13,867 | 75.6 hrs |
+|Training set | [🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-annotations-training.json)| 7,240 | 91,863 | 473.8 hrs |
+|Evaluation set | [🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-annotations-eval.json)| 1,171 |13,867 | 75.6 hrs |
 
 
 **[Note]** The json files include the information of video id (YouTube id), video duration, timestamps and detailed captions of each omni-modal events. You can download the raw videos on YouTube using the provided video ids.
