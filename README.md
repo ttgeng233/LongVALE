@@ -49,10 +49,10 @@ Event understanding benchmark comprising 105K omnimodal events with precise temp
 ### LongVALE-based dialogue data for LongVALE-LLM training 
 | Tuning Stage          | Data Source | Download | # Videos | # QA Dialogues | 
 |-----------------|----------|-----------------|-----------|---|
-|Omni boundary perception |LongVALE | [🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/stage_2_train_7240.json) | 7240 | 7240 |
-|          |LongVALE + [VTimeLLLM_stage2](https://github.com/huangb23/VTimeLLM)  | [🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/stage_2_ours_add_vtimellm.json) | ~141K | ~154K
-|Omni instruction tuning | LongVALE | [🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/stage_3_train_only_ours.json) | 7240 | ~25.4K |
-| | LongVALE + [VTimeLLLM_stage3](https://github.com/huangb23/VTimeLLM) |[🤗 link](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/stage_3_ours_add_vtimellm.json)| - |~61.4K|
+|Omni boundary perception |LongVALE | [🤗 longvale-sft-bp-7k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-bp-7k.json) | 7,240 | 7,240 |
+|          |LongVALE + [VTimeLLLM_stage2](https://github.com/huangb23/VTimeLLM)  | [🤗 longvale-sft-bp-154k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-bp-154k.json) | ~141K | ~154K
+|Omni instruction tuning | LongVALE | [🤗 longvale-sft-it-25k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-it-25k.json) | 7,240 | ~25.4K |
+| | LongVALE + [VTimeLLLM_stage3](https://github.com/huangb23/VTimeLLM) |[🤗 longvale-sft-it-61k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-it-61k.json)| - |~61.4K|
 
 
 ## Acknowledgement
