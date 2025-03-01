@@ -47,12 +47,12 @@ Event understanding benchmark comprising 105K omnimodal events with precise temp
 **[Note]** The json files include the information of video id (YouTube id), video duration, timestamps and detailed captions of each omni-modal events. You can download the raw videos on YouTube using the provided video ids.
 
 ### LongVALE-based dialogue data for LongVALE-LLM training 
-| Tuning Stage          | Data Source | Download | # Videos | # QA Dialogues | 
+| Tuning Stage          | Download | # Videos | # QA Dialogues | Data Source |
 |-----------------|----------|-----------------|-----------|---|
-|Omni boundary perception |LongVALE | [🤗 longvale-sft-bp-7k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-bp-7k.json) | 7,240 | 7,240 |
-|          |LongVALE + [VTimeLLLM_stage2](https://github.com/huangb23/VTimeLLM)  | [🤗 longvale-sft-bp-154k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-bp-154k.json) | ~141K | ~154K
-|Omni instruction tuning | LongVALE | [🤗 longvale-sft-it-25k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-it-25k.json) | 7,240 | ~25.4K |
-| | LongVALE + [VTimeLLLM_stage3](https://github.com/huangb23/VTimeLLM) |[🤗 longvale-sft-it-61k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-it-61k.json)| - |~61.4K|
+|Omni boundary perception | [🤗 longvale-sft-bp-7k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-bp-7k.json) | 7,240 | 7,240 |LongVALE |
+|          | [🤗 longvale-sft-bp-154k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-bp-154k.json) | ~141K | ~154K | LongVALE + [VTimeLLM_stage2](https://github.com/huangb23/VTimeLLM)  |
+|Omni instruction tuning |[🤗 longvale-sft-it-25k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-it-25k.json) | 7,240 | ~25.4K | LongVALE | 
+| | [🤗 longvale-sft-it-61k](https://huggingface.co/datasets/ttgeng233/LongVALE/resolve/main/longvale-sft-it-61k.json)| - |~61.4K|LongVALE + [VTimeLLM_stage3](https://github.com/huangb23/VTimeLLM) |
 
 
 ## Acknowledgement
