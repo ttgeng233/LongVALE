@@ -2,11 +2,252 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LongVALE</title>
+    <!-- <meta name="description"
+          content="BiM-VFI interpolates clearer intermediate images from given input images."> -->
+    <!-- <meta name="keywords" content="BiM-VFI, VFI, Interpolation"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <!--    <link rel="icon" href="./static/images/favicon.svg">-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
 <body>
-    <h1>Welcome to LongVALE!</h1>
-    <p>This is a custom web page.</p>
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos</h1>
+                        <div class="is-size-5 publication-authors" style="margin-bottom: 20px;">
+                            <strong style="font-size: 30px">CVPR 2025</strong>
+                        </div>
+                        <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                    <a href="">Tiantian Geng</a>,</span>
+                    <span class="author-block">
+                    <a href="">Jinrui Zhang</a>,</span>
+                    <span class="author-block">
+                    <a href="">Qingni Wang</a>,</span>
+                    <span class="author-block">
+                    <a href="">Teng Wang</a>,</span>
+                    <span class="author-block">
+                    <a href="">Jinming Duan</a>,</span>
+                    <span class="author-block">
+                    <a href="">Feng Zheng</a>
+                </span>
+                </div>
+
+                <div class="column has-text-centered">
+                    <div class="publication-links">
+                        <!-- PDF Link. -->
+                        <span class="link-block">
+            <a href=""
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>Paper (coming soon)</span>
+            </a>
+        </span>
+        <span class="link-block">
+            <a href="https://arxiv.org/abs/2411.19772"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+        </span>
+        <span class="link-block">
+            <a href="https://github.com/ttgeng233/LongVALE"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+            </a>
+        </span>
+        <span class="link-block">
+            <a href="https://huggingface.co/datasets/ttgeng233/LongVALE"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HuggingFace" style="height: 1em;">
+              </span>
+              <span>HuggingFace</span>
+            </a>
+        </span>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Despite impressive advancements in video understanding, most efforts 
+                        remain limited to coarse-grained or visual-only video tasks. However, 
+                        real-world videos encompass omni-modal information (vision, audio, 
+                        and speech) with a series of events forming a cohesive storyline. 
+                        The lack of multi-modal video data with fine-grained event annotations 
+                        and the high cost of manual labeling are major obstacles to comprehensive 
+                        omni-modality video perception. To address this gap, we propose an 
+                        automatic pipeline consisting of high-quality multi-modal video filtering, 
+                        semantically coherent omni-modal event boundary detection, and cross-modal 
+                        correlation-aware event captioning. In this way, we present LongVALE, 
+                        the first-ever Vision-Audio-Language Event understanding benchmark comprising
+                         105K omni-modal events with precise temporal boundaries and detailed 
+                         relation-aware captions within 8.4K high-quality long videos. Further, 
+                         we build a baseline that leverages LongVALE to enable video large 
+                         language models (LLMs) for omni-modality fine-grained temporal video
+                          understanding for the first time. Extensive experiments demonstrate
+                           the effectiveness and great potential of LongVALE in advancing comprehensive
+                            multi-modal video understanding.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+        <section class="hero teaser">
+            <div class="container is-max-desktop">
+                <div class="hero-body">
+                    <img src="./static/images/fig1.jpg"
+                         class="figure"
+                         alt="Conceptual information of proposed BiM"/>
+                    <!-- <h2 class="subtitle has-text-centered">
+                        Distinct motion description of proposed Bidirectional Motion field (BiM) for non-uniform
+                        motions.
+                    </h2> -->
+                </div>
+            </div>
+        </section>
+        
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Annotation Pipeline of LongVALE</h2>
+                <div class="network-architecture">
+                    <img src="./static/images/fig2.jpg"
+                         class="figure"
+                         alt="Conceptual information of proposed BiM"/>
+                </div>
+            </div>
+        </div>
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Statistics</h2>
+                <div class="network-architecture">
+                    <!-- <div class="publication-video"> -->
+                        <!-- <iframe
+                                src="https://youtube.com/embed/ZxccgaOzNyQ"
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div> -->
+                    <img src="./static/images/fig3.jpg"
+                         class="figure"
+                         alt="Conceptual information of proposed BiM"/>
+                </div>
+            </div>
+            <!--/ Paper video. -->
+        </div>
+    </div>
+</section>
+
+<section class="section" id="license">
+    <div class="container is-max-desktop content">
+        <h2 class="title">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+                <img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" 
+                     alt="Creative Commons License" 
+                     style="border-width:0; vertical-align: middle; margin-right: 10px;">
+            </a>
+            License
+        </h2>
+        <div class="divider-custom divider-light"></div>
+        <p class="lead">
+            The LongVALE dataset is available for download under the 
+            <a class="paper-sub" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+                Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+            </a>. 
+            The copyright remains with the original video owners. Please contact the authors if you have any questions regarding the dataset.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>
+            @article{geng2024longvale,
+                title={Longvale: Vision-audio-language-event benchmark towards time-aware omni-modal perception of long videos},
+                author={Geng, Tiantian and Zhang, Jinrui and Wang, Qingni and Wang, Teng and Duan, Jinming and Zheng, Feng},
+                journal={arXiv preprint arXiv:2411.19772},
+                year={2024}
+              }
+            </code></pre>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <!--    <div class="content has-text-centered">-->
+        <!--      <a class="icon-link"-->
+        <!--         href="./static/videos/nerfies_paper.pdf">-->
+        <!--        <i class="fas fa-file-pdf"></i>-->
+        <!--      </a>-->
+        <!--      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>-->
+        <!--        <i class="fab fa-github"></i>-->
+        <!--      </a>-->
+        <!--    </div>-->
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        We thank the authors of <a target="_blank" rel="noopener noreferrer"
+                                                   href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> that
+                        kindly open sourced the template of this website.
+                    </p>
+                </div>
+            </div>
+            <a href="https://mapmyvisitors.com/web/1bx7i"  title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=_Jml0QSgqhGcb6TbiOqL_cHOkBSQkGNlzS6RVSXKQpk&cl=ffffff" /></a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
