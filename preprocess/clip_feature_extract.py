@@ -5,7 +5,7 @@ import torch
 import argparse
 from torch.utils.data import Dataset, DataLoader
 from torchvision.transforms import Compose, Resize, CenterCrop, Normalize
-from vtimellm.mm_utils import VideoExtractor 
+from longvalellm.mm_utils import VideoExtractor 
 import json
 import os
 from tqdm import tqdm
@@ -41,6 +41,7 @@ class AudioDataset(Dataset):
         return len(self.data)
     
     def __getitem__(self, index):
+        #activitynet 
         item = self.data[index]
         video_id = item['id']
         video_path = os.path.join(self.video_dir, '{}.mp4'.format(video_id))

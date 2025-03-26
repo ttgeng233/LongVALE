@@ -1,7 +1,7 @@
 import sys
 sys.path.append('./')
-from vtimellm.mm_utils import BEATSAudioExtractor
-from vtimellm.model.beats.BEATs import BEATs, BEATsConfig
+from longvalellm.mm_utils import BEATSAudioExtractor
+from longvalellm.model.beats.BEATs import BEATs, BEATsConfig
 import torch
 import argparse
 from torch.utils.data import Dataset, DataLoader 

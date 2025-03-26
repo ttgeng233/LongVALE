@@ -1,6 +1,6 @@
 import sys
 sys.path.append('./')
-from vtimellm.mm_utils import SpeechExtractor
+from longvalellm.mm_utils import SpeechExtractor
 from transformers.models.whisper.modeling_whisper import WhisperModel
 from torch.utils.data import Dataset, DataLoader 
 import torch
@@ -99,7 +99,7 @@ if __name__ =='__main__':
             speech_embeds_overlap = speech_embeds_overlap.view(B, -1, kernel[1], L) 
             speech_embeds_overlap = torch.permute(speech_embeds_overlap, [0, 3, 2, 1]) 
             speech_embeds = speech_embeds_overlap.reshape(-1, kernel[1], C) 
-
+            
             speech_embeds_pooled = torch.mean(speech_embeds, dim=1) 
             # FIXME, too long to train, consider pooling
             output_features = speech_embeds_pooled.cpu().numpy()

@@ -18,8 +18,9 @@ TODO
 
 - [x] Release the annotation files of LongVALE.
 - [x] Release the extracted features (video, audio, speech) of LongVALE.
-- [ ] Release the LongVALE-LLM model with training and evauluation code.
+- [x] Release the LongVALE-LLM model with training and evauluation code.
 - [ ] Release raw videos of LongVALE.
+- [ ] Release the code of pipeline for automatic generation of high-quality omni-modality fine-grained annotations for multi-modal long videos.
   
 ## 👀 Overview
 <!-- Recent advancements in video understanding remain limited to coarse-grained and visual-only tasks. However, real-world videos encompass omnimodal information (vision, audio, and speech) with a series of events forming a cohesive storyline. The lack of
@@ -77,6 +78,14 @@ pip install flash-attn --no-build-isolation
 |              |      |              | [Evaluation](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/features_eval/speech_features_1171.zip)|
 
 **[Note]** You can also extract features by youself by using the provided scripts at `./preprocess`.
+
+## Evaluation
+For evaluation instruction, please refer to [eval.md](longvalellm/eval/eval.md)
+
+## Training
+If you want to train the model by youself, please refer to [train.md](longvalellm/train/train.md) for training instructions. 
+
+
 
 ## Acknowledgement
 We are grateful for the following awesome projects: [VTimeLLM](https://github.com/huangb23/VTimeLLM)
