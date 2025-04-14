@@ -7,7 +7,7 @@
 
 <!-- [![arxiv](https://img.shields.io/badge/Arxiv-2410.05643-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.19772) -->
 
-[[🌐 Project Page](https://ttgeng233.github.io/LongVALE/)] [[📖 arXiv Paper](https://arxiv.org/abs/2411.19772)] [[📊 LongVALE Dataset](https://huggingface.co/datasets/ttgeng233/LongVALE)]
+[[🌐 Project Page](https://ttgeng233.github.io/LongVALE/)] [[📖 arXiv Paper](https://arxiv.org/abs/2411.19772)] [[🤗 LongVALE Dataset (Hugging face)](https://huggingface.co/datasets/ttgeng233/LongVALE)] [[📊 LongVALE Dataset (Baidu drive)](https://pan.baidu.com/s/1lXh9x14KGcchEYDMkXkf-g?pwd=i6s7)]
 
 ## News
 
@@ -77,7 +77,7 @@ pip install flash-attn --no-build-isolation
 |Speech        |Whisper| [whisper-large-v2](https://huggingface.co/openai/whisper-large-v2)| [Training](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/features_training/speech_features_7240.zip) |
 |              |      |              | [Evaluation](https://huggingface.co/datasets/ttgeng233/LongVALE/blob/main/features_eval/speech_features_1171.zip)|
 
-**[Note]** You can also extract features by youself by using the provided scripts at `./preprocess`. 
+**[Note]** You can also extract features by youself by using the provided scripts at `./preprocess`. The raw videos can be downloaded from this [link](https://pan.baidu.com/s/1lXh9x14KGcchEYDMkXkf-g?pwd=i6s7) (Baidu drive, pwd: i6s7). Since the copyright remains with the original video owners, please download videos under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
 ## Evaluation
 For evaluation instruction, please refer to [eval.md](longvalellm/eval/eval.md)
