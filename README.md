@@ -7,7 +7,7 @@
 
 <!-- [![arxiv](https://img.shields.io/badge/Arxiv-2410.05643-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2411.19772) -->
 
-[[🌐 Project Page](https://ttgeng233.github.io/LongVALE/)] [[📖 arXiv Paper](https://arxiv.org/abs/2411.19772)] [[🤗 LongVALE Dataset (Hugging face)](https://huggingface.co/datasets/ttgeng233/LongVALE)] [[📊 LongVALE Dataset (Baidu drive)](https://pan.baidu.com/s/1lXh9x14KGcchEYDMkXkf-g?pwd=i6s7)]
+[[🌐 Project Page](https://ttgeng233.github.io/LongVALE/)] [[📖 Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Geng_LongVALE_Vision-Audio-Language-Event_Benchmark_Towards_Time-Aware_Omni-Modal_Perception_of_Long_Videos_CVPR_2025_paper.html)] [[🤗 LongVALE Dataset (Hugging face)](https://huggingface.co/datasets/ttgeng233/LongVALE)] [[📊 LongVALE Dataset (Baidu drive)](https://pan.baidu.com/s/1lXh9x14KGcchEYDMkXkf-g?pwd=i6s7)]
 
 ## News
 
@@ -94,10 +94,11 @@ We are grateful for the following awesome projects: [VTimeLLM](https://github.co
 ## Citation
 If you find our project are useful for your research, please consider citing:
 ```
-@article{geng2024longvale,
+@inproceedings{geng2025longvale,
   title={Longvale: Vision-audio-language-event benchmark towards time-aware omni-modal perception of long videos},
   author={Geng, Tiantian and Zhang, Jinrui and Wang, Qingni and Wang, Teng and Duan, Jinming and Zheng, Feng},
-  journal={arXiv preprint arXiv:2411.19772},
-  year={2024}
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={18959--18969},
+  year={2025}
 }
 ```
